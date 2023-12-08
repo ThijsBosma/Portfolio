@@ -11323,3 +11323,8 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+.project-heading-myadditions{
+  margin-top: 20px;
+  text-align: left;
+}
