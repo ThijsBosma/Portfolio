@@ -120,7 +120,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">The platformer</div>
+                                <div class="portfolio-caption-heading">Rolling balls</div>
                                 <div class="portfolio-caption-subheading text-muted fst-normal">2 weeks project</div>
                             </div>
                         </div>
@@ -135,13 +135,13 @@
                                 <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Rolling balls</div>
+                                <div class="portfolio-caption-heading">The platformer</div>
                                 <div class="portfolio-caption-subheading text-muted fst-normal">2 weeks project</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
+                        <!-- Portfolio item 6
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
@@ -156,7 +156,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <!-- Skills -->
         <section class="page-section" id="Skills">
@@ -171,7 +171,7 @@
                             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Unity</h4>
-                        <p class="text-muted">I have been working in unity for 1.5 years</p>
+                        <p class="text-muted">I use unity as my game engine when making games.</p>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -226,11 +226,15 @@
                                     </video>
                                     <!-- Project description -->
                                     <h2 class="project-heading-text">Project description</h2>
-                                        <p>In this project we were tasked to make a racing game that was set in the night. The goal in this game is to race around the track and get the best time possible. The way we motivate you to do this is by having multiple characters that you need a specific time to unlock. </p>
+                                        <p>In this project we were tasked to make a racing game with a night theme. The goal in this game is to race around the track and get the best time possible. The way we motivate you to do this is by having multiple characters that you need a specific time to unlock. <p>
                                             <p>We decided not too have many obstacles because we wanted to put more of an emphasis on finding the good racing lines and getting a good time, similar to something like trackmania<p>
                                     <h2 class="project-heading-text">My additions</h2>
                                         <h2 class="project-heading-myadditions">Ghost system</h2>
-                                            </p>For the game wanted to have a way to easily see how quickly you went through the track, the way we wanted to show this was through the use of a ghost system. This system tracks the movements of the player and saves this if its the best time you have driven and replays the saved movements the next race</p>
+                                            <p>For the game wanted to have a way to easily see how quickly you went through the track, the way we wanted to show this was through the use of a ghost system. This system tracks the movements of the player and saves this if its the best time you have driven and replays the saved movements the next race<p>
+                                        <h2 class="project-heading-myadditions">Checkpoints</h2>
+                                            <p>In the game we decided to place down checkpoints on certain spots on the track so you could easily respawn at that checkpoint and figure out the best way to go about a certain section. Or if you got stuck somewhere on the map you could respawn without having to reset the race.<p>
+                                        <h2 class="project-heading-text">Game feel</h2>
+                                            <p>The game itself was quite simple but we still needed to give the feeling of speed to the player without having the car go extremely fast. The way we did this was by adding camera shake a dynamic camera that goes further back when you speed up and goes more to the front when you are braking.<p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close Project
@@ -257,8 +261,17 @@
                                         <source src="/assets/Media/Twinstick trailer (Team 4).mp4" type="video/mp4">
                                     </video>
                                     <h2 class="project-heading-text">Project description</h2>
-                                        <p>For this project we were tasked with making a twinstick shootre in 8 weeks. This was a group project consisting of 2 developers and 3 artists</p>
-                                            <p>The goal of the game is to walk around the facility and try and find the necessary keycard to continue in the level. You have to fight your way through droids that have been taken over by a virus. Its your task to get to the end and reset all the robots</p>
+                                        <p>For this project we were tasked with making a twinstick shooter in 8 weeks. This was a group project consisting of 2 developers and 3 artists</p>
+                                            <p>The goal of the game is to walk around the facility and try and find the necessary keycard to continue in the level. You have to fight your way through droids that have been taken over by a virus. Its your task to get to the end and reset all the robots<p>
+                                    <h2 class="project-heading-text">My additions</h2>
+                                        <h2 class="project-heading-myadditions">Keycard system</h2>
+                                            <p>Because you had to go through the facility as fast as possible we still wanted to give the player some difficultys so he could not get to the end immediately. The way we did this was by adding keycards, we would place these all across the map and you would have to find the correct one to get to the next level<p>
+                                        <h2 class="project-heading-myadditions">Health system</h2>
+                                            <p>In the game you had both a healthbar and shieldbar, i decided to implement this with inheritance so you can easily make a new script for the player or enemy health and easily get the required things for health</p>
+                                        <h2 class="project-heading-myadditions">Dash</h2>
+                                            <p>We needed to give the player a way to dash and weave away from enemys when being shot at so you have a better chance of surviving. Thats the reason why we decided to implement a dash, the dash has a cooldown and will shoot you in any direction you are currently holding</p>
+                                        <h2 class="project-heading-myadditions">Drop system enemy</h2>
+                                            <p>We wanted to make it so the player would have to kill all the enemys in a certain room in order to progress, the way we decided to implement this is by making a system where if all enemys are dead the final one will drop a keycard that is required to get to the next level</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close Project
@@ -284,8 +297,13 @@
                                     <video class="video" controls>
                                         <source src="/assets/Media/Gameplay vid SHMUP.mp4" type="video/mp4">
                                     </video>
-                                    <p>For this project i got tasked with making a SHMUP. i got to work in this project with another developer and 3 artists.</p>
+                                    <p>For this project i got tasked with making a SHMUP. i got to work in this project with another developer and 3 artists. This was one of my first ever projects i made in unity</p>
                                         <p>We decided to make a game where your goal is to survive and get to the end to start a bossfight, once the boss was defeated you have won the game.</p>
+                                    <h2 class="project-heading-text">My additions</h2>
+                                        <h2 class="project-heading-myadditions">Enemy behaviour</h2>
+                                            <p>We made the enemys move in the same direction as the ground, this gave the illusion that the player was moving forward but in reality the player was always at the same position. We had a few enemy types, one that would look at the player and shoot at him, one that shot in a straight line and a balloon enemy that you could not kill which dropped bombs</p>
+                                        <h2 class="project-heading-myadditions">Bossfight</h2>
+                                            <p>The bossfight was a combination of the enemy types it always shot at the player and it had a chance to drop bombs. He would also drop hearts which healed the player so the player had more of a chance to finish the fight.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close Project
@@ -309,8 +327,16 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Gameplay video</h2>
                                     <video class="video" controls>
-                                        <source src="assets/Media/The platformer gameplay video.mp4" type="video/mp4">
+                                        <source src="assets/Media/Marble game video.mp4" type="video/mp4">
                                     </video>
+                                    <p>For this project i hade to make a game where a marble was rolling around. I decided to make a third person platformer out of it.</p>
+                                    <h2 class="project-heading-text">My additions</h2>
+                                        <h2 class="project-heading-myadditions">Movement</h2>
+                                            <p>For the game i had to create third person movement in order to move around, the thing i had to keep in mind though is that the camera is constantly changing position and that when holding forward you should always go to where the camera is facing</p>
+                                        <h2 class="project-heading-myadditions">Collecting system</h2>
+                                            <p>I wanted to make a big level at the end where you had to collect multiple golden bars in order to unlock the next level. The way i implemented this feature in the final level is by making 3 different sectionsm, one that was easy one that was medium difficulty and one that was hard.</p>
+                                        <h2 class="project-heading-myadditions">Controller support</h2>
+                                            <p>Usually platformers play alot nicer with controller then on keyboard so i decided to add controller support to my game. I did this with the current input system from unity through the input manager.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close Project
@@ -334,19 +360,16 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Gameplay video</h2>
                                     <video class="video" controls>
-                                        <source src="assets/Media/Marble game video.mp4" type="video/mp4">
+                                        <source src="assets/Media/The platformer gameplay video.mp4" type="video/mp4">
                                     </video>
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
-                                    </ul>
+                                    <p>This was one of the first ever projects i made in unity, for this we got tasked with making a 2D platformer.</p>
+                                        <p>The goal of this platformer is to reach the end of the levels without dying</p>
+                                    <h2 class="project-heading-text">My additions</h2>
+                                        <h2 class="project-heading-myadditions">Movement</h2>
+                                            <p>The first thing i made was the player movement, i used a rigidbody 2d for this and spent quite some time tweaking the movement so it felt good and rewarding to the player.</p>
+                                                <p>There were a few extra things i added to the movement such as a double jump, sprint and wall jump</p>
+                                        <h2 class="project-heading-myadditions">Level creation</h2>
+                                            <p>I had to make the levels myself the way i made the layout was by using 2 tilemaps 1 for the background and 1 for the foreground with a collider. This made it really easy to put together levels and change them if necessary.</p>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
                                         Close Project
@@ -358,7 +381,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 6 modal popup-->
+        <!-- Portfolio item 6 modal popup
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -367,7 +390,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
+                                    <-- Project details
                                     <h2 class="text-uppercase">Project Name</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
@@ -392,7 +415,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
