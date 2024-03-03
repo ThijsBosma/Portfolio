@@ -84,6 +84,21 @@
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
                         <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/Skeleton Slayer portfolio.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Skeleton Slayer</div>
+                                <div class="portfolio-caption-subheading text-muted fst-normal">4 weeks Project</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -97,7 +112,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 3-->
+                    <!-- Portfolio item 4-->
                     <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
                                 <div class="portfolio-hover">
@@ -112,21 +127,6 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Skeleton Slayer</div>
-                                <div class="portfolio-caption-subheading text-muted fst-normal">4 weeks Project</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
                         <!-- Portfolio item 5
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
@@ -231,6 +231,43 @@
             </div>
         </div>
         <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Gameplay video</h2>
+                                    <video class="video" controls>
+                                        <source src="assets/Media/The platformer gameplay video.mp4" type="video/mp4">
+                                    </video>
+                                    <h2 class="project-heading-text">Project description</h2>
+                                    <p>For this project our group got tasked with making a game, we could make anything we wanted to make and our group decided on making a roguelike.</p>
+                                        <p>The goal of the game is to survive the chambers and kill all the skeletons in order to proceed onwards and beat the level</p>
+                                    <h2 class="project-heading-text">My additions</h2>
+                                        <h2 class="project-heading-myadditions">Enemies</h2>
+                                            <p>I had the task of making the enemies work in the game. For this i decided to use a brain script that was given to us at the start of the project and added my own things when necessary. The enemies did not have too many behaviours they had to be able to wander and chase the player to attack</p>
+                                                <p>I wanted to make the system really easy to work with for other people so, i decided that i would make a base enemy script in order to use inheritance.</p>
+                                        <h2 class="project-heading-myadditions">Enemy variants</h2>
+                                            <p>Because we wanted variety with the enemies the player was facing i also made some extra but simple variants of enemies using the base script. These included a fast enemy that moves quickly but has less hp and a tank enemy that had more hp but moved a bit slower</p>
+                                        <h2 class="project-heading-myadditions">Animations</h2>
+                                            <P>We decided to use animations for the weapons of the player, this way you can easily add new weapons and weapon types to the game because you only had to make the animation for it. To perform certain actions of the weapon we used animation events to put a hit box on for example.</P>
+                                                <P>For the skeleton i put the model in mixamo and used those animations to make the skeleton walk around and shoot his bow. I also used animation events to make the skeleton perform certain actions at specific keyframes.</P>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -268,7 +305,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
+        <!-- Portfolio item 4 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -303,39 +340,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Gameplay video</h2>
-                                    <video class="video" controls>
-                                        <source src="assets/Media/The platformer gameplay video.mp4" type="video/mp4">
-                                    </video>
-                                    <p>This was one of the first ever projects i made in unity, for this we got tasked with making a 2D platformer.</p>
-                                        <p>The goal of this platformer is to reach the end of the levels without dying</p>
-                                    <h2 class="project-heading-text">My additions</h2>
-                                        <h2 class="project-heading-myadditions">Movement</h2>
-                                            <p>The first thing i made was the player movement, i used a rigidbody 2d for this and spent quite some time tweaking the movement so it felt good and rewarding to the player.</p>
-                                                <p>There were a few extra things i added to the movement such as a double jump, sprint and wall jump</p>
-                                        <h2 class="project-heading-myadditions">Level creation</h2>
-                                            <p>I had to make the levels myself the way i made the layout was by using 2 tilemaps 1 for the background and 1 for the foreground with a collider. This made it really easy to put together levels and change them if necessary.</p>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- Portfolio item 6 modal popup
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
