@@ -68,6 +68,21 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/IDDC.png" alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">The interdimensional duck collector</div>
+                            <div class="portfolio-caption-subheading text-muted fst-normal">8 weeks project</div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
@@ -112,21 +127,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                    <!-- Portfolio item 4-->
-                    <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/Rolling balls picture portfolio.png" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Rolling balls</div>
-                                <div class="portfolio-caption-subheading text-muted fst-normal">2 weeks project</div>
+                                <div class="portfolio-caption-heading">Extra coding challenges</div>
+                                <div class="portfolio-caption-subheading fst-normal text-muted"></div>
                             </div>
                         </div>
                     </div>
+
+
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <!-- Portfolio item 5
                         <div class="portfolio-item">
@@ -192,7 +209,57 @@
             </div>
         </footer> -->
         <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
+                 <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Gameplay Trailer</h2>
+                                    </video>
+                                    <h2 class="project-heading-text">Project description</h2>
+                                         <p>In this project we got tasked with making any type of game we wanted that had to be compatible with WebGL and posted to itch.io after 8 weeks. For this project I got chosen for a exchange project which still had the same task but i would be working with students from Finland.</p>   
+                                            <p>When we heard we were able to make whatever we wanted we brainstormed for quite a while and decided to go with a puzzle game. We really wanted to build a puzzle game because of the infinite amount of possibilities and challenges it could come with. Our game was based alot on captain toad treasure tracker and we decided to use the same type of camera movement you see in that game.</p>
+
+                                            <p>Seeing as i got chosen for the exchange project this came with multiple extra difficulties the biggest one being that for 6 weeks we had to work abroad and not be able to communicate with everyone face to face. On discord we often let everyone know what we were doing and if certain things were doable or not. This taught me alot for communicating with people when im not right next to them and be able to help other people even though they are in a entire different country then I am.</p>
+                                    <h2 class="project-heading-text">My additions</h2>
+                                        <h3 class="project-heading-myadditions">Moving platform</h3>
+                                            <video class="video" controls>
+                                                <source src="" type="video/mp4">
+                                            </video>
+                                            <p>In our game we decided to add moving platforms that can take certain pickubable objects like a watering can and get them from point A to B, this also included the player. To activate these moving platforms there were multiple things located throughout the level like levers and buttons that when used would activate certain platforms.</p>
+                                                <p>When the platform would reach its end we also had to make sure it would be able to loop back so that the player would not get stuck on a certain point of the level.</p>
+                                            <a href="" target="_blank">Learn more</a>
+                                        <h3 class="project-heading-myadditions">Levels</h3>
+                                        <img class="img-fluid" src="assets/img/portfolio/IDDC levels.png" alt="..." />
+                                            <p>For our game I made multiple blockouts for the levels to give the artists ideas of how the level would work and the general idea for the shapes of the levels. When i had some time i would also design certain puzzles and levels to lighten the workload of other people. Putting together the levels that were fully made by the artists also came with certain difficulties, this could be something as simple as a collider not being in the right place to something that would force me to change the way certain systems worked.</p>
+                                                <p>When the levels were finished we had people test them out and let us know what could be different and as soon as we had this feedback I would change the parts of the level that were not fun to something that was better</p>
+                                            <a href="" target="_blank">Learn more</a>
+                                        <h3 class="project-heading-myadditions">Player</h3>
+                                            <p>I worked on a few things for the player aswell, I gave him functionality such as being able to climb, model swap, animations and give it an entire different script where we could save all the data so we would have been able to save it as a JSON file.</p>
+                                                <p>We wanted to implement the climbing to be able to give elevation to the levels without having to use moving platforms everywhere, we showed climbable spots by placing down vines where the player can climb up. In level 2 we forced the player to climb up a vine and this way they learned that vines are climbable and help you reach certain spots.</p>
+                                                    <p>When we got the player model there were quite a few things i had to change, this included: Changing certain colliders so they matched up with the new model, pickup and hold positions for when your picking items up and most importantly add the animations so it looked alot less stale. For the animations i used the animator in unity with certain parameters. I had a playerAnimator script in which i changed the animator parameter based on if certain actions were happening for example the player moving.</p>
+                                                        <p>We wanted to be able to save the progress of the player so they did not have to constantly restart from scratch. We wanted to save the PlayerData to a JSON file and then load that file again when the player launched the game on itch so they still had their progress. Sadly because of the time we were unable to make this work on itch but we did have a working variant for if we ever released it on desktop</p>
+                                            <a href="" target="_blank">Learn more</a>
+                                            <!--left blank so the learn more text and button are equally spaced-->
+                                            <b></b>
+                                            <p></p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -236,7 +303,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
+        <!-- Portfolio item 3 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -283,7 +350,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
+        <!-- Portfolio item 4 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -332,83 +399,6 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Gameplay video</h2>
-                                    <video class="video" controls>
-                                        <source src="https://github.com/ThijsBosma/Portfolio/raw/main/assets/Media/Marble%20game%20video.mp4" type="video/mp4">
-                                    </video>
-                                    <h2 class="project-heading-text">Project description</h2>
-                                        <p>In this project I got tasked with making a game where the main mechanic was that there had to be a marble that rolled around. I decided to take this idea and make a third person platformer.</p>
-                                            <p>The objective is to get to the end of each level but the level could vary in its main objective, it is not always a straight path.</p>
-                                    <h2 class="project-heading-text">My additions</h2>
-                                        <h3 class="project-heading-myadditions">Movement</h3>
-                                            <p>For the game I had to create third person movement in order to move around, the thing I had to keep in mind though is that the camera is constantly changing position and that when holding forward you should always go to where the camera is facing</p>
-                                                <a href="https://github.com/ThijsBosma/Portfolio/blob/main/assets/Scripts/Rolling%20balls%20(marble%20game)/Player/PlayerMovement.cs" target="_blank">Learn more</a>
-                                        <h3 class="project-heading-myadditions">Collecting system</h3>
-                                            <video class="video" controls>
-                                                <source src="https://github.com/ThijsBosma/Portfolio/raw/main/assets/Media/Rolling%20balls%20(marble%20game)/Gold%20bar%20collection.mp4" type="video/mp4">
-                                            </video>
-                                            <p>I wanted to make a big level at the end where you had to collect multiple golden bars in order to unlock the next level. The way I implemented this feature in the final level is by making 3 different sections, one that was easy, one that was medium difficulty and one that was hard.</p>
-                                                <a href="https://github.com/ThijsBosma/Portfolio/blob/main/assets/Scripts/Rolling%20balls%20(marble%20game)/Collectable/ImportantCollectable.cs" target="_blank">Learn more</a>
-                                        <h3 class="project-heading-myadditions">Controller support</h3>
-                                            <p>Usually platformers play a lot better with controller then keyboard so I decided to add controller support to my game. I did this with the current input system from unity through the input manager.</p>
-                                                <a></a>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Portfolio item 6 modal popup
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <-- Project details
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
