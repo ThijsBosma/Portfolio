@@ -26,18 +26,24 @@ public class PlayerAnimator : InputHandler
 
         _movementValue = _Move.ReadValue<Vector2>();
 
+        //Check to see if the player is moving and not picking anything up
         if (_movementValue.magnitude > 0.5f && !_isPickingUp)
-        {
+        {   
+            //Set the player animator int to 1 which is equal to the walking/running state.
             _PlayerAnimator.speed = 1;
             _PlayerAnimator.SetInteger("PlayerState", 1);
         }
+        //if the player is not moving and not picking up
         else if (_movementValue.magnitude < 0.5f && !_isPickingUp)
         {
+            //Set the integer to 0 which is equal to idle.
             _PlayerAnimator.SetInteger("PlayerState", 0);
         }
 
+        //If the player is climbing.
         if (_controller._IsClimbing)
         {
+            //Set the integer to 3 which is equal to the climbing animation
             _PlayerAnimator.SetInteger("PlayerState", 3);
             if (_movementValue.y > 0)
                 _PlayerAnimator.speed = 1;

@@ -8,7 +8,7 @@ enum EnemyStates
     Wandering = 0,
     Chasing
 }
-// Gemaakt door Thijs Bosma
+
 [RequireComponent(typeof(Steering))]
 public abstract class Enemy : MonoBehaviour
 {
@@ -157,9 +157,12 @@ public abstract class Enemy : MonoBehaviour
 
         if(toPlayer.magnitude <= _DetectionRadius)
         {
+            //Make the detection circle
             if(Vector3.Dot(toPlayer.normalized, transform.forward) > Mathf.Cos(_DetectionAngle * 0.5f * Mathf.Deg2Rad))
             {
+                //Change the state to chasing
                 _enemyStates = EnemyStates.Chasing;
+                //return the instance of playermovement
                 return PlayerMovement._PlayerMovementInstance;
             }
         }

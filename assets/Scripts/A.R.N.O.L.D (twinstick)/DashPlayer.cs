@@ -16,6 +16,7 @@ public class MovementPlayer : MonoBehaviour
 
     private IEnumerator Dash()
     {
+        //Get the direction the player is dashing towards
         Vector3 dashDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
         float startTime = Time.time;

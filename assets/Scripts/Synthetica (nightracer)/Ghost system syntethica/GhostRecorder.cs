@@ -33,16 +33,21 @@ public class GhostRecorder : MonoBehaviour
     private void RecordPositions()
     {
         _ghostTimer += Time.deltaTime;
-
+        //if the timer is higher then the time between saves
         if (_ghostTimer >= _IntervalBetweenSaves)
         {
+            //put back the ghost timer to zero
             _ghostTimer = 0;
+            //Add the timestamp position and rotation to their respective list
             _ghost._TimeStamps.Add(_gameManager._Timer);
             _ghost._SavedPositions.Add(_PlayerTransform.position);
             _ghost._SavedRotations.Add(_PlayerTransform.rotation);
         }
     }
 
+    /// <summary>
+    /// Saves the data to json.
+    /// </summary>
     public void SaveRecording()
     {
         string recordedPlayerMovements = JsonUtility.ToJson(_ghost);
