@@ -51,4 +51,11 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    function calculateAge()
+    {
+        const dateOfBirth = 2006
+        const currentDate = new Date();
+
+        currentDate.setFullYear(currentDate.getFullYear() - dateOfBirth);
+    }
 });
